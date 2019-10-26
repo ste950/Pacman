@@ -1,0 +1,133 @@
+body {
+    background: black;
+}
+
+#home {
+    border-style: dashed;
+    border-color: blue;
+    width: 700px;
+}
+
+#title {
+    text-align: center;
+    color: yellow;
+    font-size: 80px;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+
+#gioca, #editor {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    padding: 50px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    width: 400px;
+}
+
+#gioca:hover, #editor:hover, #play:hover, #elimina:hover, #pausa:hover, #continua:hover, #openeditor:hover, button:hover {
+    background: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+marquee {
+    padding: 50px;
+    width: 600px;
+}
+
+img {
+    height: 50px;
+    width: 50px
+}
+
+#play {
+    position: absolute;
+    height: 20px;
+    width: 90px;
+    color: black;
+    background: white;
+    display: none;
+}
+
+#elimina {
+    position: absolute;
+    height: 20px;
+    width: 90px;
+    color: white;
+    background: rgb(233, 0, 0);
+    display: none;
+}
+
+button {
+    position: absolute;
+    height: 20px;
+    width: 25px;
+    background: black;
+    color: white;
+    border: 0px;
+    text-align: center;
+    display: none;
+}
+
+button:active {
+    background: white;
+    color: black;
+}
+
+#width, #height {
+    position: absolute;
+    height: 20px;
+    width: 50px;
+    color: white;
+    display: none;
+}
+
+#canvas_lab, #canvas_pac {
+	position: absolute;
+    margin: auto;
+	left: 0px;
+	right: 0px;
+    top: 40px; 
+    display: none;
+}
+
+#canvas_points {
+	position: absolute;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+    top: 0px;
+    display: none;
+}
+
+#pausa {
+    position: absolute;
+    top: 666px;
+    height: 20px;
+    width: 90px;
+    color: white;
+    background: rgb(233, 0, 0);
+    display: none;
+}
+
+#continua {
+    position: absolute;
+    top: 666px;
+    height: 20px;
+    width: 90px;
+    color: black;
+    background: rgb(3, 223, 32);
+    display: none;
+}
+
+#openeditor {
+    position: absolute;
+    top: 666px;
+    height: 20px;
+    width: 90px;
+    color: black;
+    background: white;
+    display: none;
+}

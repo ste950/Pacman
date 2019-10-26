@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pacman</title>
+        <link rel="stylesheet" type="text/css" href="pacman.css">
+        <script src="js/pacman.js"></script>
+        <script src="js/editor.js"></script>
+    </head>
+
+    <body>
+		<center id="container">
+			<div id="play" onclick="initPacman()">Gioca</div>
+			<div id="elimina" onclick="deleteWall()">Elimina</div>
+			
+			<button id="bmw" onclick="decreaseWidth()">-</button>
+			<div id="width">width</div>
+			<button id="bpw" onclick="increaseWidth()">+</button>
+			<button id="bmh" onclick="decreaseHeight()">-</button>
+			<div id="height">height</div>
+			<button id="bph" onclick="increaseHeight()">+</button>
+		
+			<canvas id="canvas_points" height="40px" width="616px">Canvas non supportato dal browser!</canvas>
+			<canvas id="canvas_lab" height="616px" width="616px">Canvas non supportato dal browser!</canvas>
+			<canvas id="canvas_pac" height="616px" width="616px">Canvas non supportato dal browser!</canvas>
+
+			<div id="home">    
+				<div id = "title">PACMAN</div>
+				<div id = "gioca" onclick="initPacman()">Gioca</div>
+				<div id = "editor" onclick="initEditor()">Editor di livelli</div>
+				<marquee behavior="scroll" direction="right" scrollamount="7">
+					<img src="img/blue.png">
+					<img src="img/orange.png">
+					<img src="img/red.png">
+					<img src="img/pacman.png">
+				</marquee>      
+			</div>
+
+			<div id="pausa" onclick="pause()">Pausa</div>
+			<div id="continua" onclick="start()">Continua</div> 
+			<div id="openeditor" onclick="openEditor()">Editor</div> 
+		</center> 
+    </body>
+</html>
